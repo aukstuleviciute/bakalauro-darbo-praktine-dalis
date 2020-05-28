@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  php-apache:
+    image: geerlingguy/php-apache:latest
+    container_name: php-apache
+    ports:
+    - 9000:80
+    restart: always
+    volumes:
+    - ./html:/var/www/html:rw,delegated
+    command: ['/usr/sbin/apache2ctl', '-D', 'FOREGROUND']

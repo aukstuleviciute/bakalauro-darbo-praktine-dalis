@@ -1,0 +1,473 @@
+html {
+    --content-width: 1070px;
+    --tabcontent-background-colour: #02122c;
+    
+    --
+}
+
+header {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    color: #02122c;
+}
+
+header a, header a:hover, header a:active {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.site-content {
+    width: var(--content-width);
+    margin: auto;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    border: 0;
+    background-color: #0770e3;
+    border: 1px solid #02122c;
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background: var(--tabcontent-background-colour);
+    border: 1px solid #02122c;
+}
+
+.tabcontent {
+    display: none;
+    padding: 25px 12px 30px;
+    border: 0;
+    border-top: 0px;
+    background-color: var(--tabcontent-background-colour);
+}
+
+.tabcontent.active {
+    display: block;
+}
+input, .fake-input {
+    width: 100%;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+    font-size: 1em;
+    line-height: 2em;
+    
+    background: white;
+    color: black;
+    height: 2em;
+}
+
+input:invalid {
+/*    border: 1px solid red;*/
+}
+
+form .inputs-line {
+    display: block;
+}
+
+form .inputs-line > div {
+    display: inline-block;
+    position: relative;
+}
+
+.tabcontent form label {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.slide {
+    margin: 25px auto 0;
+    width: 1em;
+}
+
+.image {
+    margin-top: 20px;
+    width: 1024px;
+
+}
+
+.search-strip {
+    background: url('../images/search-background.jpg');
+    background-position: 0 -330px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    padding: 10em 0;
+}
+
+.search-strip h2 {
+    font-size: 2.5em;
+}
+
+.overlay {
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 0.5em 1em;
+    z-index: 10;
+    display: none;
+}
+
+.overlay.visible {
+    display: block;
+}
+
+.switch-button {
+    padding: 0.5em;
+}
+
+.switch-button.clicked {
+    color: #007bff;;
+}
+
+.confirmation-line {
+    text-align: right;
+}
+
+.btn-search {
+    width: 13em;
+    margin: 15px;
+}
+
+.btn-add {
+    width: 15em;
+    margin: 15px 49.5em 20px 0;
+}
+
+.fa-plus-circle {
+    margin-right: 5px;
+}
+
+.travellers {
+    width: 4em;
+}
+
+.btn-remove {
+    margin-left: 7px;
+    font-size: 20px;
+    width: 10px;
+}
+
+.btn-multi-search {
+    width: 13em;
+    margin-left: 33.2em;
+}
+
+.columns {
+    padding: 10px;
+}
+
+.results-container {
+    display: flex;
+}
+
+.autocomplete-results {
+    width: 23em;
+}
+
+.autocomplete-results:empty {
+    display: none;
+}
+
+.label {
+    color: white;
+}
+
+.main-part {
+    background-color: aliceblue;
+}
+
+.results-screen {
+    overflow: auto;
+}
+
+.btn-alert {
+    width: 15.4em;
+    margin-bottom: 20px;
+}
+
+.v1 {
+    border-left: 2px solid #02122c;
+    height: 500px;
+}
+
+.title-filter {
+    margin: 13px 0 0 3px;
+    font-size: 20px;
+    color: #02122c;
+}
+
+.title-filter + a {
+    line-height: 30px
+}
+
+hr {
+    margin: 0;
+}
+
+.btn-sort {
+    background: white;
+}
+
+.sort-title {
+    margin: 13px 0 0 7px;
+    font-size: 17px;
+    color: #02122c;
+}
+
+.filter {
+    margin: 5px;
+    color: #02122c;
+}
+
+#filters-column .clear.hidden, #filters-column #clear-all.hidden-by-stops.hidden-by-price.hidden-by-airlines.hidden-by-airports.hidden-by-duration.hidden-by-layover {
+    display: none;
+}
+
+.clear, .clear-all {
+    float: right; 
+    font-size: 10px; 
+    padding: 0 5px 0 5px; 
+    margin: 5px 0 5px 0;
+}
+#departure-time, #arrival-time {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#departure-airport, #arrival-airport {
+    font-size: 12px;
+}
+
+#duration, #stop-number {
+    font-size: 10px;
+}
+
+#departure-airport-expanded, #arrival-airport-expanded {
+    font-size: 11px;
+}
+
+#duration-expanded {
+    font-size: 12px;
+}
+
+#airline-search, #airport-search {
+    margin-bottom: 10px;
+}
+
+.modal.visible {
+    display: block;
+}
+
+.modal {
+  display: none; 
+  z-index: 1; 
+  --padding-top: 100px; 
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  margin: 0 auto 0;
+  width: 50%; 
+  height: auto;
+  --height: 50%; 
+  overflow: auto;
+  background: none;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search {
+    margin-bottom: 10px;
+}
+
+.auto-complete-item:hover {
+    background-color: #E7F5F7;
+}
+
+.system-logo:hover, .btn-remove:hover {
+    color: #007bff;
+}
+
+.layover-container.hidden, .flight-container.hidden {
+    display: none;
+}
+
+.stats-lane > * {
+    display: inline-block;
+}
+
+.stats-lane > *.hidden {
+    display: none;
+}
+
+.stats-lane .content {
+/*    height: 10em;*/
+    display: flex;
+}
+
+.stats-lane .content > * {
+    
+}
+
+.stats-lane .legend .line {
+    display: inline-block;
+    width: 5px;
+    height: 100px;
+    border: 1px solid #02122c;
+    border-left: 0;
+    margin-bottom: 1em;
+}
+
+.stats-lane .numbers {
+    position: relative;
+    width: 1em;
+}
+
+.stats-lane .numbers, .stats-lane .legend {
+    margin-top: 15px;
+}
+
+.stats-lane .numbers > * {
+    position: absolute;
+    font-size: 0.6em;
+}
+
+.stats-lane .numbers .top {
+    top: -5px;
+    left: 0px;
+}
+
+.stats-lane .numbers .bottom {
+    top: 93px;
+    left: 0px;
+}
+
+
+.stats-lane .prices-stats {
+    background: white;
+}
+
+.stats-lane .prices-stats > * {
+    display: inline-block;
+}
+
+.stats-lane .prices-stats .price-bar {
+    background: #0D466F;
+    width: 1em;
+    margin: 1em 0.1em 0;
+}
+
+.stats-lane .prices-stats .price-tooltip {
+    position: absolute;
+    font-size: 10px;
+    visibility: hidden;
+    background: white;
+}
+
+.stats-lane .prices-stats .price-tooltip.visible {
+    visibility: visible;
+}
+
+.stats-lane .prices-stats .price-bar:hover {
+    background: #19B2DB;
+}
+
+.subscription-main-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #02122c;
+    margin-top: 20px;
+}
+
+.subscription-text {
+    font-size: 20px;
+    color: #02122c;
+    margin-bottom: 20px;
+}
+
+.graph-title {
+    padding-top: 7px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #02122c;
+    text-align: left;
+}
+
+.layover-container {
+    margin-left: 130px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(224, 98, 115);
+}
+
+.filter-column {
+    background-color: #D8EDED;
+}
+
+.spinner-border {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.no-results, .no-results-message {
+    display: none;
+}
+
+.no-results-message.no-results {
+    display: block;
+}
+
+.message {
+    display: none;
+}
+
+.message.visible {
+    display: block;
+    font-size: 10px;
+    color: orangered;
+}
+
+input[type=date]::-webkit-outer-spin-button, input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
